@@ -1,0 +1,145 @@
+@font-face {
+    font-family: relogio;
+    src: url(/fonts/Horahumun.otf);
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: url(/images/papel-parede-windows.webp) center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Principal Escuro */
+.center {
+    background-color: rgba(10, 18, 36, 0.88);
+    border: 2px solid #00d2ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 30px;
+    justify-content: center;
+    gap: 15px;
+    width: fit-content;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 210, 255, 0.3);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icone-header {
+    font-size: 24px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    color: #ffffff;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+/* Estilo geral das caixas */
+.caixa {
+    background: rgba(0, 210, 255, 0.08);
+    border: 1px solid rgba(0, 210, 255, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    color: #00e5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Relógio */
+.relogio-unico {
+    padding: 15px 35px;
+    font-size: 65px;
+    font-family: relogio;
+    gap: 10px;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+.relogio-unico .separador {
+    font-size: 55px;
+    margin-bottom: 6px;
+}
+
+/* Data Completa (Texto azul claro) */
+.data-resumo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00d2ff;
+    letter-spacing: 2px;
+}
+
+/* Caixa Única da Data */
+.data-unica {
+    padding: 12px 30px;
+    gap: 35px;
+}
+
+.item-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-data .label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #8a99ad;
+    margin-bottom: 2px;
+}
+
+.item-data .numero {
+    font-size: 32px;
+    font-family: relogio;
+    color: #00e5ff;
+}
+
+/* Caixa do Período (Saudação Borda Dourada) */
+.caixa-periodo {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ffb700;
+    border-radius: 25px;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 183, 0, 0.08);
+    color: #ffb700;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Indicador de Status */
+.status-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    color: #00e5ff;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+}
+
+.ponto-verde {
+    width: 8px;
+    height: 8px;
+    background-color: #00ff66;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #00ff66;
+}
